@@ -7,6 +7,8 @@
     --shadow: 0 1px 5px rgba(104,104,104,0.8);
 }
 
+/* Core Elements */
+
 html{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -38,23 +40,24 @@ img{
 
 /* Navigation */
 .main-nav ul{
-    display: grid;
-    grid-gap: 20px;
     padding: 0;
     list-style: none;
+    display: grid;
+    grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .main-nav a{
-    background: var(--primary);
     display: block;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    text-align: center;
+    background: var(--primary);
     color: var(--dark);
-    text-transform: uppercase;
     font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
     box-shadow: var(--shadow);
+    padding: 0.5rem 1rem;
+
 }
 
 .main-nav a:hover{
@@ -81,7 +84,7 @@ img{
     padding: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     box-shadow: var(--shadow);
 }
@@ -120,7 +123,7 @@ img{
     grid-area: top-box-b;
 }
 
-/* Boxeas */
+/* Boxes */
 
 .boxes{
     display: grid;
@@ -135,15 +138,19 @@ img{
     box-shadow: var(--shadow);
 }
 
+/* Info */
+
 .info{
     background: var(--primary);
     box-shadow: var(--shadow);
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
-    padding: 3rem;
+    padding: 2rem;
 
 }
+
+/* Portfolio */
 
 .portfolio{
     display: grid;
@@ -155,6 +162,8 @@ img{
     width: 100%;
     box-shadow: var(--shadow);
 }
+
+/* Footer */
 
 footer{
     margin-top: 2rem;
